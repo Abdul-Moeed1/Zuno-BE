@@ -13,7 +13,7 @@ export class User {
     email: string
 
     @Prop({ required: true })
-    dateOfBirth: DateOfBirth
+    dateOfBirth: Date
 
     @Prop({ type: String, required: true })
     password: string
