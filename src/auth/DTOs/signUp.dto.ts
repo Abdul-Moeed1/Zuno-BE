@@ -25,7 +25,7 @@ export class SignUpDTO {
     @IsStrongPassword({ minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1 })
     password: string
     
-    @ApiProperty()
+    @ApiProperty({enum: Gender})
     @IsEnum(Gender)
     @IsString()
     gender: Gender
